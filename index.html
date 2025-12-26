@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>John Garza - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          John Garza
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jgarzajeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/sunblock-8184613_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm John Garza! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I've worked in the pharmaceutical industry for over 14 years as a quality control analyst, and supervisor. 
+            Most recently I worked for a sunscreen company in their quality department as a quality manager.
+            I'm currently working on my Full Stack Development certificate to purue a career change. Although this is challenging, 
+            I find it incredibly interesting and fun working on projects that provide a sense of satisfaction upon completion.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>1 year  experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/quality-control-571149_1280.jpg"/>
+            <h6>Quality Control</h6>
+            <p>12 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="html_finalprojimages/clipboard-4892500_1280.png"/>
+            <h6>Quality Assurance</h6>
+            <p>4 years experience</p>
+          </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Stability Program</h3>
+            <ul>
+              <li>Developed and implemented a new stability testing protocol that aligned domestic and international testing requirements to expedite product launches.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Regulatory and Compliance</h3>
+            <ul>
+              <li>Collaborated with product development and regulatory to ensure raw material docuementation required for product registration was recieved, reviewed for completeness, and filed accordingly.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Assay Method Revision</h3>
+            <ul>
+              <li>Collaborated with analytical R&D, supplier and QC to troubleshoot and resolve failing assay to maintain product release turnaround time.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          John is a diligent worker that embraces a challenge. He is not afraid to ask questions when he is unfamiliar with a task to ensure he has all the
+          information to make the correct choice and complete the assignement. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+            John is an incredible teammate that is willing to train his colleagues on tasks that are new to them. He is patient when training and provides guidance 
+            as new employees embark on tacking projects on their own. He is always open to questions or providing a helping hand when needed.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+            I worked with John for 3 years and during that time, I was able to rely on him to get the job done. He is quick to help others, but also seeks out help
+            when he needs it. There was never a project to big for us when working as a team because we collaborated well. He will be a tremendous teammate for your
+            team.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->Thank you for leaving a recommendation.</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
